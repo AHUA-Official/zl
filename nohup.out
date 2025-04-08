@@ -78,3 +78,7 @@ INFO
  
 WARN  Your hexo-theme-reimu is outdated. Current version: v1.4.0, latest version: v1.7.0
 WARN  Visit https://github.com/D-Sketon/hexo-theme-reimu/releases for more information.
+main: line 89: 701468 Killed                  hexo server
+
+> [31m操作失败！[0m
+我们都有不顺利的时候。
