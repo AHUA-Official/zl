@@ -1,0 +1,80 @@
+
+> hexo clean
+INFO  Validating config
+INFO  Deleted database.
+
+> hexo server
+INFO  Validating config
+INFO  Start processing
+INFO  
+  ______     ______     __     __    __     __  __    
+ /\  == \   /\  ___\   /\ \   /\ "-./  \   /\ \/\ \   
+ \ \  __<   \ \  __\   \ \ \  \ \ \-./\ \  \ \ \_\ \  
+  \ \_\ \_\  \ \_____\  \ \_\  \ \_\ \ \_\  \ \_____\ 
+   \/_/ /_/   \/_____/   \/_/   \/_/  \/_/   \/_____/ 
+                                                      
+ 
+INFO  Hexo is running at http://localhost:4000/ . Press Ctrl+C to stop.
+WARN  Your hexo-theme-reimu is outdated. Current version: v1.4.0, latest version: v1.7.0
+WARN  Visit https://github.com/D-Sketon/hexo-theme-reimu/releases for more information.
+main: line 91: open: command not found
+INFO  
+  ______     ______     __     __    __     __  __    
+ /\  == \   /\  ___\   /\ \   /\ "-./  \   /\ \/\ \   
+ \ \  __<   \ \  __\   \ \ \  \ \ \-./\ \  \ \ \_\ \  
+  \ \_\ \_\  \ \_____\  \ \_\  \ \_\ \ \_\  \ \_____\ 
+   \/_/ /_/   \/_____/   \/_/   \/_/  \/_/   \/_____/ 
+                                                      
+ 
+WARN  Your hexo-theme-reimu is outdated. Current version: v1.4.0, latest version: v1.7.0
+WARN  Visit https://github.com/D-Sketon/hexo-theme-reimu/releases for more information.
+INFO  
+  ______     ______     __     __    __     __  __    
+ /\  == \   /\  ___\   /\ \   /\ "-./  \   /\ \/\ \   
+ \ \  __<   \ \  __\   \ \ \  \ \ \-./\ \  \ \ \_\ \  
+  \ \_\ \_\  \ \_____\  \ \_\  \ \_\ \ \_\  \ \_____\ 
+   \/_/ /_/   \/_____/   \/_/   \/_/  \/_/   \/_____/ 
+                                                      
+ 
+WARN  Your hexo-theme-reimu is outdated. Current version: v1.4.0, latest version: v1.7.0
+WARN  Visit https://github.com/D-Sketon/hexo-theme-reimu/releases for more information.
+INFO  
+  ______     ______     __     __    __     __  __    
+ /\  == \   /\  ___\   /\ \   /\ "-./  \   /\ \/\ \   
+ \ \  __<   \ \  __\   \ \ \  \ \ \-./\ \  \ \ \_\ \  
+  \ \_\ \_\  \ \_____\  \ \_\  \ \_\ \ \_\  \ \_____\ 
+   \/_/ /_/   \/_____/   \/_/   \/_/  \/_/   \/_____/ 
+                                                      
+ 
+WARN  Your hexo-theme-reimu is outdated. Current version: v1.4.0, latest version: v1.7.0
+WARN  Visit https://github.com/D-Sketon/hexo-theme-reimu/releases for more information.
+INFO  
+  ______     ______     __     __    __     __  __    
+ /\  == \   /\  ___\   /\ \   /\ "-./  \   /\ \/\ \   
+ \ \  __<   \ \  __\   \ \ \  \ \ \-./\ \  \ \ \_\ \  
+  \ \_\ \_\  \ \_____\  \ \_\  \ \_\ \ \_\  \ \_____\ 
+   \/_/ /_/   \/_____/   \/_/   \/_/  \/_/   \/_____/ 
+                                                      
+ 
+WARN  Your hexo-theme-reimu is outdated. Current version: v1.4.0, latest version: v1.7.0
+WARN  Visit https://github.com/D-Sketon/hexo-theme-reimu/releases for more information.
+INFO  
+  ______     ______     __     __    __     __  __    
+ /\  == \   /\  ___\   /\ \   /\ "-./  \   /\ \/\ \   
+ \ \  __<   \ \  __\   \ \ \  \ \ \-./\ \  \ \ \_\ \  
+  \ \_\ \_\  \ \_____\  \ \_\  \ \_\ \ \_\  \ \_____\ 
+   \/_/ /_/   \/_____/   \/_/   \/_/  \/_/   \/_____/ 
+                                                      
+ 
+WARN  Your hexo-theme-reimu is outdated. Current version: v1.4.0, latest version: v1.7.0
+WARN  Visit https://github.com/D-Sketon/hexo-theme-reimu/releases for more information.
+INFO  
+  ______     ______     __     __    __     __  __    
+ /\  == \   /\  ___\   /\ \   /\ "-./  \   /\ \/\ \   
+ \ \  __<   \ \  __\   \ \ \  \ \ \-./\ \  \ \ \_\ \  
+  \ \_\ \_\  \ \_____\  \ \_\  \ \_\ \ \_\  \ \_____\ 
+   \/_/ /_/   \/_____/   \/_/   \/_/  \/_/   \/_____/ 
+                                                      
+ 
+WARN  Your hexo-theme-reimu is outdated. Current version: v1.4.0, latest version: v1.7.0
+WARN  Visit https://github.com/D-Sketon/hexo-theme-reimu/releases for more information.
