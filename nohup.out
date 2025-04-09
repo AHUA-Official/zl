@@ -82,3 +82,121 @@ main: line 89: 701468 Killed                  hexo server
 
 > [31m操作失败！[0m
 我们都有不顺利的时候。
+
+> hexo clean
+INFO  Validating config
+INFO  Deleted database.
+INFO  Deleted public folder.
+
+> hexo server
+INFO  Validating config
+INFO  Start processing
+ERROR Process failed: _posts/README.md
+YAMLException: end of the stream or a document separator is expected (4:39)
+
+ 1 |  ... there 👋 <img src="https://github.com/laixintao/laixintao/blob/ ...
+ 2 |  ... 
+ 3 |  ... Official/AHUA-Official** is a ✨ _special_ ✨ repository because  ...
+ 4 |  ... e some ideas to get you started:
+-----------------------------------------^
+ 5 |  ... m currently working on ...
+ 6 |  ... m currently learning ...
+    at generateError (/root/cutehwtzl/node_modules/js-yaml/lib/loader.js:183:10)
+    at throwError (/root/cutehwtzl/node_modules/js-yaml/lib/loader.js:187:9)
+    at readDocument (/root/cutehwtzl/node_modules/js-yaml/lib/loader.js:1645:5)
+    at loadDocuments (/root/cutehwtzl/node_modules/js-yaml/lib/loader.js:1688:5)
+    at Object.load (/root/cutehwtzl/node_modules/js-yaml/lib/loader.js:1714:19)
+    at parseYAML (/root/cutehwtzl/node_modules/hexo-front-matter/dist/front_matter.js:65:38)
+    at parse (/root/cutehwtzl/node_modules/hexo-front-matter/dist/front_matter.js:49:16)
+    at /root/cutehwtzl/node_modules/hexo/dist/plugins/processor/post.js:44:52
+    at tryCatcher (/root/cutehwtzl/node_modules/bluebird/js/release/util.js:16:23)
+    at Promise._settlePromiseFromHandler (/root/cutehwtzl/node_modules/bluebird/js/release/promise.js:544:35)
+    at Promise._settlePromise (/root/cutehwtzl/node_modules/bluebird/js/release/promise.js:604:18)
+    at Promise._settlePromise0 (/root/cutehwtzl/node_modules/bluebird/js/release/promise.js:649:10)
+    at Promise._settlePromises (/root/cutehwtzl/node_modules/bluebird/js/release/promise.js:729:18)
+    at Promise._fulfill (/root/cutehwtzl/node_modules/bluebird/js/release/promise.js:673:18)
+    at PromiseArray._resolve (/root/cutehwtzl/node_modules/bluebird/js/release/promise_array.js:127:19)
+    at PromiseArray._promiseFulfilled (/root/cutehwtzl/node_modules/bluebird/js/release/promise_array.js:145:14)
+    at PromiseArray._iterate (/root/cutehwtzl/node_modules/bluebird/js/release/promise_array.js:115:31)
+    at PromiseArray.init [as _init] (/root/cutehwtzl/node_modules/bluebird/js/release/promise_array.js:79:10)
+    at Promise._settlePromise (/root/cutehwtzl/node_modules/bluebird/js/release/promise.js:601:21)
+    at Promise._settlePromise0 (/root/cutehwtzl/node_modules/bluebird/js/release/promise.js:649:10)
+    at Promise._settlePromises (/root/cutehwtzl/node_modules/bluebird/js/release/promise.js:729:18)
+    at Promise._fulfill (/root/cutehwtzl/node_modules/bluebird/js/release/promise.js:673:18)
+INFO  
+  ______     ______     __     __    __     __  __    
+ /\  == \   /\  ___\   /\ \   /\ "-./  \   /\ \/\ \   
+ \ \  __<   \ \  __\   \ \ \  \ \ \-./\ \  \ \ \_\ \  
+  \ \_\ \_\  \ \_____\  \ \_\  \ \_\ \ \_\  \ \_____\ 
+   \/_/ /_/   \/_____/   \/_/   \/_/  \/_/   \/_____/ 
+                                                      
+ 
+INFO  ---- START COPYING TAG CLOUD FILES ----
+INFO  ---- END COPYING TAG CLOUD FILES ----
+INFO  Hexo is running at http://localhost:4000/ . Press Ctrl+C to stop.
+WARN  Your hexo-theme-reimu is outdated. Current version: v1.4.0, latest version: v1.7.0
+WARN  Visit https://github.com/D-Sketon/hexo-theme-reimu/releases for more information.
+main: line 91: open: command not found
+main: line 89: 727149 Hangup                  hexo server
+
+> [31m操作失败！[0m
+我们都有不顺利的时候。
+
+> hexo clean
+INFO  Validating config
+INFO  Deleted database.
+INFO  Deleted public folder.
+
+> hexo server
+INFO  Validating config
+INFO  Start processing
+ERROR Process failed: _posts/README.md
+YAMLException: end of the stream or a document separator is expected (4:39)
+
+ 1 |  ... there 👋 <img src="https://github.com/laixintao/laixintao/blob/ ...
+ 2 |  ... 
+ 3 |  ... Official/AHUA-Official** is a ✨ _special_ ✨ repository because  ...
+ 4 |  ... e some ideas to get you started:
+-----------------------------------------^
+ 5 |  ... m currently working on ...
+ 6 |  ... m currently learning ...
+    at generateError (/root/cutehwtzl/node_modules/js-yaml/lib/loader.js:183:10)
+    at throwError (/root/cutehwtzl/node_modules/js-yaml/lib/loader.js:187:9)
+    at readDocument (/root/cutehwtzl/node_modules/js-yaml/lib/loader.js:1645:5)
+    at loadDocuments (/root/cutehwtzl/node_modules/js-yaml/lib/loader.js:1688:5)
+    at Object.load (/root/cutehwtzl/node_modules/js-yaml/lib/loader.js:1714:19)
+    at parseYAML (/root/cutehwtzl/node_modules/hexo-front-matter/dist/front_matter.js:65:38)
+    at parse (/root/cutehwtzl/node_modules/hexo-front-matter/dist/front_matter.js:49:16)
+    at /root/cutehwtzl/node_modules/hexo/dist/plugins/processor/post.js:44:52
+    at tryCatcher (/root/cutehwtzl/node_modules/bluebird/js/release/util.js:16:23)
+    at Promise._settlePromiseFromHandler (/root/cutehwtzl/node_modules/bluebird/js/release/promise.js:544:35)
+    at Promise._settlePromise (/root/cutehwtzl/node_modules/bluebird/js/release/promise.js:604:18)
+    at Promise._settlePromise0 (/root/cutehwtzl/node_modules/bluebird/js/release/promise.js:649:10)
+    at Promise._settlePromises (/root/cutehwtzl/node_modules/bluebird/js/release/promise.js:729:18)
+    at Promise._fulfill (/root/cutehwtzl/node_modules/bluebird/js/release/promise.js:673:18)
+    at PromiseArray._resolve (/root/cutehwtzl/node_modules/bluebird/js/release/promise_array.js:127:19)
+    at PromiseArray._promiseFulfilled (/root/cutehwtzl/node_modules/bluebird/js/release/promise_array.js:145:14)
+    at PromiseArray._iterate (/root/cutehwtzl/node_modules/bluebird/js/release/promise_array.js:115:31)
+    at PromiseArray.init [as _init] (/root/cutehwtzl/node_modules/bluebird/js/release/promise_array.js:79:10)
+    at Promise._settlePromise (/root/cutehwtzl/node_modules/bluebird/js/release/promise.js:601:21)
+    at Promise._settlePromise0 (/root/cutehwtzl/node_modules/bluebird/js/release/promise.js:649:10)
+    at Promise._settlePromises (/root/cutehwtzl/node_modules/bluebird/js/release/promise.js:729:18)
+    at Promise._fulfill (/root/cutehwtzl/node_modules/bluebird/js/release/promise.js:673:18)
+INFO  
+  ______     ______     __     __    __     __  __    
+ /\  == \   /\  ___\   /\ \   /\ "-./  \   /\ \/\ \   
+ \ \  __<   \ \  __\   \ \ \  \ \ \-./\ \  \ \ \_\ \  
+  \ \_\ \_\  \ \_____\  \ \_\  \ \_\ \ \_\  \ \_____\ 
+   \/_/ /_/   \/_____/   \/_/   \/_/  \/_/   \/_____/ 
+                                                      
+ 
+INFO  ---- START COPYING TAG CLOUD FILES ----
+INFO  ---- END COPYING TAG CLOUD FILES ----
+INFO  Hexo is running at http://localhost:4000/ . Press Ctrl+C to stop.
+WARN  Your hexo-theme-reimu is outdated. Current version: v1.4.0, latest version: v1.7.0
+WARN  Visit https://github.com/D-Sketon/hexo-theme-reimu/releases for more information.
+main: line 91: open: command not found
+main: line 89: 727788 Hangup                  hexo server
+
+> [31m操作失败！[0m
+我们都有不顺利的时候。
