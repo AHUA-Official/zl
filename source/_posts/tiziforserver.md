@@ -64,6 +64,6 @@ systemctl status  v2raya.service检查状态
 
 需要自己注册，之后自己找一个梯子的订阅链接导入进去，导入之后，在UI的这个位置
 
-![1744780605905](image/tiziforserver/1744780605905.png)
+![1744780605905](./image/tiziforserver/1744780605905.png)
 
 就OK了

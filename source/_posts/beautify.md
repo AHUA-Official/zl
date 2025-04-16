@@ -65,7 +65,7 @@ tags: [Github]
 
 - 项目地址 https://github.com/journey-ad/Moe-Counter
 
-  ![image-20241214235146665](https://raw.githubusercontent.com/AHUA-Official/TAEveryday/main/assets/image-20241214235146665.png)
+  ![image-20241214235146665](https://raw.githubusercontent.com/AHUA-Official/TAEveryday/main/./assets/image-20241214235146665.png)
 
 -  多种风格可选的萌萌计数器！
 
@@ -77,7 +77,7 @@ tags: [Github]
 
 - 项目地址 https://github.com/devicons/devicon
 
-   ![image-20241215000635299](https://raw.githubusercontent.com/AHUA-Official/TAEveryday/main/assets/image-20241215000635299.png)
+   ![image-20241215000635299](https://raw.githubusercontent.com/AHUA-Official/TAEveryday/main/./assets/image-20241215000635299.png)
 
   如图，你也想通过<img>标签应用展示你接触过的工具吗  使用devicon在jsdelivr上通过CDN分发的语言/工具的svg图片！
 
@@ -102,7 +102,7 @@ tags: [Github]
 
 使用Pind来展示你很好看很用心的开源项目谢谢    如果一个项目的小星星很多  我会很羡慕  很嫉妒   
 
-![image-20241215011526095](https://raw.githubusercontent.com/AHUA-Official/TAEveryday/main/assets/image-20241215011526095.png)
+![image-20241215011526095](https://raw.githubusercontent.com/AHUA-Official/TAEveryday/main/./assets/image-20241215011526095.png)
 
 
 
@@ -158,7 +158,7 @@ https://zhuanlan.zhihu.com/p/454597068
 
 嗯  美化主页的方法还有很多  不过我写到这个地方已经想和朋友一起出门吃烧烤烤了 ，那就先这样吧  拜拜！
 
-![image-20241215011928299](https://raw.githubusercontent.com/AHUA-Official/TAEveryday/main/assets/image-20241215011928299.png)
+![image-20241215011928299](https://raw.githubusercontent.com/AHUA-Official/TAEveryday/main/./assets/image-20241215011928299.png)
 
 人生相遇不容易，点个关注我爱你~
 
