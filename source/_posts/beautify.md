@@ -1,3 +1,8 @@
+---
+title: 美化Github主页
+date: 
+tags: [Github]
+---
 # 美化github主页的教程
 简单介绍美化Github主页的小工具  
 关于如何在github主页上创建repo 展示你的主页  见 https://bianyujie.cn/Beautify-your-GitHub-personal-homepage
