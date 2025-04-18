@@ -65,6 +65,7 @@ index_generator:
   path: ''
   per_page: 10
   order_by: -date
+  recursive: true  # 这个选项很关键，启用递归渲染
 
 # Category & Tag
 default_category: uncategorized
