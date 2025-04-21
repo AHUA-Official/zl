@@ -359,3 +359,11 @@ git merge <分支名>
 git rebase <分支名>
 ```
 
+
+#### git submodule
+
+```
+git submodule add <仓库地址> <路径>
+```
+
+
