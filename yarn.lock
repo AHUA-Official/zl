@@ -1247,10 +1247,10 @@ hexo-theme-landscape@^1.0.0:
   resolved "https://registry.npmmirror.com/hexo-theme-landscape/-/hexo-theme-landscape-1.1.0.tgz"
   integrity sha512-nszjixBEiEDZjf7glAGbHg0nKGHZdUDwzFVVdRDeu4FeHfGcY5CZNl9sF4vSligjnD8IwFXpDfx5E+GRmNKvWg==
 
-hexo-theme-reimu@^1.4.0:
-  version "1.4.0"
-  resolved "https://registry.npmmirror.com/hexo-theme-reimu/-/hexo-theme-reimu-1.4.0.tgz"
-  integrity sha512-KKTI8FogBIuUyF/rjWc0n73CEI/IH3wiWZ0WXFMHa4nKTQ7f/19UxRcl9CZoGjmukUCW8NG3wDjOGw2gwbgApQ==
+hexo-theme-reimu@^1.8.3:
+  version "1.8.3"
+  resolved "https://registry.yarnpkg.com/hexo-theme-reimu/-/hexo-theme-reimu-1.8.3.tgz#362b5879dbf65dfb4e0035c73be77997a7b2fb58"
+  integrity sha512-7aseiaZbYRN883A+vXGrGgKPUU/R+L4ToqeJZczlNGJ518Ee3Kj4K2xUsFTI7GDh7mnWKZ3wR9Q47Uh/UEa4yA==
 
 hexo-util@^3.0.1, hexo-util@^3.1.0, hexo-util@^3.3.0:
   version "3.3.0"
