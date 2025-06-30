@@ -1,30 +1,20 @@
+---
+title: LinuxZL-文本处理习题
+date: 2024-12-15 00:00:00
+tags: [Linux笔记]
+---
 # 典型回答
-  
-
 
 通常我们会使用ELK收集并查看日志，查询日志通过ES语法实现。但是有的时候，还是免不了要去服务器上查看日志。在Linux下，常用的有2种方式查看日志：
 
-  
-
-
-1. 使用`tail -f 日志文件名`滚动输出日志文件。适用于实时观察日志的场景。
-
-  
-
-
-1. 使用`less 日志文件名`查看整个日志文件，并按`空格`向下翻页，按`ctrl+b`向上翻页，按`/`并输入`关键词`向下搜索，按`?`并输入`关键词`向上搜索，按`q`退出。适用于通篇查看日志的场景。
-
-  
-
+1. 使用 `tail -f 日志文件名`滚动输出日志文件。适用于实时观察日志的场景。
+2. 使用 `less 日志文件名`查看整个日志文件，并按 `空格`向下翻页，按 `ctrl+b`向上翻页，按 `/`并输入 `关键词`向下搜索，按 `?`并输入 `关键词`向上搜索，按 `q`退出。适用于通篇查看日志的场景。
 
 除了日志的查看，有的时候我们还需要做一些分析，比如统计QPS，按照耗时排序等。
 
-在不用ELK或者其他第三方日志平台的情况下，我们使用Linux命令是完全可以做到的。但只是`tail`和`less`命令完成不了上述需求，此时我们需要使用`grep`、`awk`、`sort`、`uniq`、`wc`等命令进行组合才能达到目的。这些命令组合不只用于分析日志，也可以用到其他分析场景（如统计磁盘、CPU使用情况）。
+在不用ELK或者其他第三方日志平台的情况下，我们使用Linux命令是完全可以做到的。但只是 `tail`和 `less`命令完成不了上述需求，此时我们需要使用 `grep`、`awk`、`sort`、`uniq`、`wc`等命令进行组合才能达到目的。这些命令组合不只用于分析日志，也可以用到其他分析场景（如统计磁盘、CPU使用情况）。
 
 如以下需要做数据分析场景：
-
-  
-
 
 1. 统计httpClient日志文件http_access.log中，某个接口的一天总请求量是多少。
 2. 统计客户端访问日志access.log中，返回http状态码为500的接口平均QPS是多少。
@@ -33,13 +23,8 @@
 下面介绍几个常用的命令及使用方式。
 
 # 扩展知识
-  
-
 
 + `grep`命令：用于查找关键词，常用玩法：
-
-  
-
 
 ```plain
 grep '/xxx.json' http_access.log  #查找http_access.log中包含xxx.json的接口
@@ -48,25 +33,13 @@ grep -i "asc" info.log  #查找info.log中包含asc的行，忽略字符大小�
 grep "ASC|asc" info.log  #使用正则表达式匹配asc或者ASC
 ```
 
-  
-
-
 + `wc`命令：用于字词统计，常用玩法：
-
-  
-
 
 ```plain
 grep '/xxx.json' http_access.log | wc -l  #查找http_access.log中接口名包含xxx.json的请求总共有多少条，wc -l起到统计行数的作用
 ```
 
-  
-
-
 + `sort`命令：用于排序，常用玩法：
-
-  
-
 
 ```plain
 # 若test.txt文件内容如下
@@ -100,13 +73,7 @@ aa,1
 cc,2
 ```
 
-  
-
-
 + `uniq`命令：用于去重，常用玩法：
-
-  
-
 
 ```plain
 grep 'Exception' warn.log| uniq -c #统计warn.log中的异常，去重并显示每种异常有多少个，uniq -c起到去重并统计相同字符出现的次数
@@ -145,13 +112,7 @@ sort -k2 -t ',' -n test.txt|uniq -c #按第二列数字排序，统计重复行�
 1 cc,2
 ```
 
-  
-
-
 + `awk`命令：用于处理文本，awk是个非常强大的命令，能够处理输入的每一行字符串，玩法众多（够写一本书了），这里只介绍常用的：
-
-  
-
 
 ```plain
 # 若test.txt文件如下：
@@ -174,27 +135,15 @@ cc
 结束处理
 ```
 
-  
-
-
 我们利用以上的命令，来回答扩展阅读开头的三个问题：
 
-  
-
-
-说明：access.log和http_access.log遵循如下格式：  
-`[日志级别] 请求时间年月日 请求时间时分秒 [请求线程名称] - 请求方法 响应状态码 耗时 请求URL requestID`  
-每组信息中间用空格分开。  
-如：  
+说明：access.log和http_access.log遵循如下格式：
+`[日志级别] 请求时间年月日 请求时间时分秒 [请求线程名称] - 请求方法 响应状态码 耗时 请求URL requestID`
+每组信息中间用空格分开。
+如：
 `[INFO] 20231023 13:00:27.049 [abcService-exec-1] - 2 GET 200 600 http://xxx.com/abc/xxx.json d7af416bc1390dc4d9124f147bab4e53 [INFO] 20231023 13:00:27.049 [abcService-exec-1] - 2 GET 500 800 http://xxx.com/abc/yyy.json e7af416bc1390dc4d9124f147bab4e52 [INFO] 20231023 13:00:27.049 [abcService-exec-1] - 2 GET 200 810 http://xxx.com/abc/yyy.json e7af416bc1390dc4d9124f147bab4e52 [INFO] 20231023 13:00:27.050 [abcService-exec-1] - 2 GET 500 210 http://xxx.com/abc/yyy.json e7af416bc1390dc4d9124f147bab4e52 [INFO] 20231023 13:00:27.049 [abcService-exec-1] - 2 GET 200 550 http://xxx.com/abc/aaa.json f7af416bc1390dc4d9124f147bab4e51 [INFO] 20231023 13:00:27.049 [abcService-exec-1] - 2 GET 200 50 http://xxx.com/abc/zzz.json f7af416bc1390dc4d9124f147bab4e51`
 
-  
-
-
 **统计httpClient日志文件http_access.log中，某个接口的一天总请求量是多少。**
-
-  
-
 
 ```plain
 grep "/yyy.json" http_access.log|wc -l
@@ -206,13 +155,7 @@ grep "/yyy.json" http_access.log|wc -l
 2. 通过wc统计总行数，得出总量
 ```
 
-  
-
-
 **统计客户端访问日志access.log中，返回http状态码为500的接口平均QPS是多少。**
-
-  
-
 
 ```plain
 grep "/yyy.json" access.log|grep ' 500 ' |awk '{print substr($0,10,15)}'  | uniq -c  | awk '{sum += $1} END {print sum / NR}'
@@ -228,13 +171,7 @@ grep "/yyy.json" access.log|grep ' 500 ' |awk '{print substr($0,10,15)}'  | uniq
 5. awk '{sum += $1} END {print sum / NR}'：最后，使用第二个 awk 命令计算出现次数的平均值。它将每一行的第一个字段（出现次数）累加到 sum 变量中，然后在处理完所有行后，通过除以行数 NR 得到平均值，并将结果打印出来。
 ```
 
-  
-
-
 **统计access.log中，某个接口耗时大于500ms，并按照耗时排序。**
-
-  
-
 
 ```plain
 awk '$9>500{print $0}' access.log | sort -k9 -n -r |awk '!arr[$10]++ {print $9"ms",$10}' 
@@ -250,16 +187,4 @@ awk '$9>500{print $0}' access.log | sort -k9 -n -r |awk '!arr[$10]++ {print $9"m
 3. 第10列为请求地址，arr[$10] 创建了一个关联数组，用于存储第10列的值。!arr[$10]++ 通过判断数组中的值是否已存在，实现了按第10列去重的功能。如果某个请求地址是第一次出现，则打印该行的第99列和第10列。其中第9列拼个ms打印。
 ```
 
-  
-
-
 awk命令比较复杂，有一本书叫做《sed与awk》，详细讲解俩个命令如何处理文本的。也可以多敲多练，遇到不会的拿样本数据问问chatgpt，会给出正确的命令和详细的解释。
-
-
-
-
-
-
-
-
-

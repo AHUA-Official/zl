@@ -1,4 +1,9 @@
-文件路径  
+---
+title: Linux- web基础运维命令
+date: 2024-12-15 00:00:00
+tags: [Linux笔记]
+---
+文件路径
 
 cd     不说
 
@@ -12,15 +17,15 @@ locate
 
 tree
 
-文件 
+文件
 
-touch  
+touch
 
-vim 
+vim
 
 cat
 
-rm -rf 
+rm -rf
 
 chmod
 
@@ -34,35 +39,25 @@ tar -zxvf
 
 unzip
 
+下包   apt-get
 
+yum       rpm
 
-
-
-下包   apt-get   
-
-yum       rpm         
-
-
-
-
-
-查进程杀进程 
+查进程杀进程
 
 lsof  -i: 5000
 
-ps | aux 
+ps | aux
 
 kill   -9    pid
 
-pgrep 
+pgrep
 
 top
 
-
-
 日志
 
-grep 
+grep
 
 sed
 
@@ -70,41 +65,34 @@ tail
 
 tee
 
-
-
-网络 
+网络
 
 ip a
 
 ip   r
 
-ping 
+ping
 
-<font style="color:rgb(6, 6, 7);">traceroute  </font>
+`<font style="color:rgb(6, 6, 7);">`traceroute  `</font>`
 
-<font style="color:rgb(6, 6, 7);">netstat </font>
+`<font style="color:rgb(6, 6, 7);">`netstat `</font>`
 
-<font style="color:rgb(6, 6, 7);"></font>
+`<font style="color:rgb(6, 6, 7);"></font>`
 
-<font style="color:rgb(6, 6, 7);"></font>
+`<font style="color:rgb(6, 6, 7);"></font>`
 
-<font style="color:rgb(6, 6, 7);"></font>
+`<font style="color:rgb(6, 6, 7);"></font>`
 
-<font style="color:rgb(6, 6, 7);">其他  </font>
+`<font style="color:rgb(6, 6, 7);">`其他  `</font>`
 
-<font style="color:rgb(6, 6, 7);">curl   发请求</font>
+`<font style="color:rgb(6, 6, 7);">`curl   发请求 `</font>`
 
-<font style="color:rgb(6, 6, 7);">wget  下文件 </font>
+`<font style="color:rgb(6, 6, 7);">`wget  下文件 `</font>`
 
-<font style="color:rgb(6, 6, 7);">ssh  远程登录</font>
+`<font style="color:rgb(6, 6, 7);">`ssh  远程登录 `</font>`
 
-<font style="color:rgb(6, 6, 7);">systemctl  系统服务管理</font>
+`<font style="color:rgb(6, 6, 7);">`systemctl  系统服务管理 `</font>`
 
-<font style="color:rgb(6, 6, 7);"></font>
+`<font style="color:rgb(6, 6, 7);"></font>`
 
-<font style="color:rgb(6, 6, 7);"></font>
-
-
-
-
-
+`<font style="color:rgb(6, 6, 7);"></font>`

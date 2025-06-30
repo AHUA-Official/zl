@@ -1,6 +1,6 @@
 ---
 title: 下班后学习方法
-date: 
+date: 2024-12-15 00:00:00
 tags: [学习]
 categories: 生活
 ---

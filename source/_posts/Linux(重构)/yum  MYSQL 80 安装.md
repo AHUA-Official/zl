@@ -1,9 +1,12 @@
- 在生产环境或长期运行的老旧机器上**直接升级 Python 版本是一项非常危险的操作**。  
-不仅可能导致依赖不兼容、老旧项目无法运行，还可能破坏系统自带工具（例如 `yum`、`apt`、`ansible` 等都依赖系统 Python）。  
+---
+title: Linux- yum  MYSQL 80 安装
+date: 2024-12-15 00:00:00
+tags: [Linux笔记]
+---
+ 在生产环境或长期运行的老旧机器上**直接升级 Python 版本是一项非常危险的操作**。
+不仅可能导致依赖不兼容、老旧项目无法运行，还可能破坏系统自带工具（例如 `yum`、`apt`、`ansible` 等都依赖系统 Python）。
 
 [https://www.cnblogs.com/MrHSR/p/16469035.html](https://www.cnblogs.com/MrHSR/p/16469035.html)
-
-
 
 ```bash
  # 下载mysql源
@@ -40,4 +43,3 @@ ALTER USER 'root'@'localhost' IDENTIFIED BY 'xxxxxxxx'
 grant all privileges on *.* to 'root'@'%' with grant option;
 FLUSH PRIVILEGES;
 ```
-

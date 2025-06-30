@@ -1,3 +1,9 @@
+---
+title: Linux- Linux常用命令
+date: 2024-12-15 00:00:00
+tags: [Linux笔记]
+---
+
 新增主线   confluence合并    大概10万字   400篇文档
 
 # linux基本命令

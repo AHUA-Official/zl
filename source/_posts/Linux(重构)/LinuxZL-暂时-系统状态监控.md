@@ -1,4 +1,10 @@
+---
+title: LinuxZL-暂时-系统状态监控
+date: 2024-12-15 00:00:00
+tags: [Linux笔记]
+---
 #### uptime
+
 命令返回的信息：
 
 + 19:08:17 // 系统当前时间
@@ -7,11 +13,13 @@
 + load average: 0.00, 0.01, 0.05 // 系统平均负载，统计最近 1，5，15 分钟的系统平均负载
 
 #### 2） dmesg
+
 dmesg 命令被用于检查和控制内核的环形缓冲区。kernel 会将开机信息存储在 ring buffer 中。您若是开机时来不及查看信息，可利用 dmesg 来查看。开机信息保存在 / var/log/dmesg 文件里。
 
 常用选项： -c：显示信息后，清除 ring buffer 中的内容； -s <缓冲区大小>：预设置为 8196，刚好等于 ring buffer 的大小； -n：设置记录信息的层级。
 
 #### 3）vmstat
+
 vmstat 命令的含义为显示虚拟内存状态（“Virtual Memory Statistics”），但是它可以报告关于进程、内存、I/O 等系统整体运行状态。
 
 常用选项： -a：显示活动内页； -f：显示启动后创建的进程总数； -m：显示 slab 信息； -n：头信息仅显示一次； -s：以表格方式显示事件计数器和内存状态； -d：报告磁盘状态； -p：显示指定的硬盘分区状态； -S：输出信息的单位；
@@ -51,12 +59,15 @@ vmstat 命令的含义为显示虚拟内存状态（“Virtual Memory Statistics
 + id: 空闲时间百分比
 
 #### 4）mpstat
+
 mpstat 命令指令主要用于多 CPU 环境下，它显示各个可用 CPU 的状态信息。这些信息存放在 / proc/stat 文件中。在多 CPUs 系统里，其不但能查看所有 CPU 的平均状况信息，而且能够查看特定 CPU 的信息。
 
 #### 5）pidstat
+
 pidstat 用于打印各个进程对 CPU 的占用情况，类似 top 命令中显示的内容。pidstat 的优势在于，可以滚动的打印进程运行情况，而不像 top 那样会清屏。
 
 #### 6）iostat
+
 iostat 命令被用于监视系统输入输出设备和 CPU 的使用情况。它的特点是汇报磁盘活动统计情况，同时也会汇报出 CPU 使用情况。同 vmstat 一样，iostat 也有一个弱点，就是它不能对某个进程进行深入分析，仅对系统的整体情况进行分析。
 
 常用选项： -c：仅显示 CPU 使用情况； -d：仅显示设备利用率； -k：显示状态以千字节每秒为单位，而不使用块每秒； -m：显示状态以兆字节每秒为单位； -p：仅显示块设备和所有被使用的其他分区的状态； -t：显示每个报告产生时的时间； -V：显示版号并退出； -x：显示扩展状态。
@@ -79,6 +90,7 @@ iostat 命令被用于监视系统输入输出设备和 CPU 的使用情况。�
 + %util：被 I/O 需求消耗的 CPU 百分比
 
 #### 7）free
+
 free 命令可以显示当前系统未使用的和已使用的内存数目，还可以显示被内核使用的内存缓冲区。
 
 常用选项： -b：以 Byte 为单位显示内存使用情况； -k：以 KB 为单位显示内存使用情况； -m：以 MB 为单位显示内存使用情况； -o：不显示缓冲区调节列； -s <间隔秒数>：持续观察内存使用状况； -t：显示内存总和列； -V：显示版本信息。
@@ -86,6 +98,7 @@ free 命令可以显示当前系统未使用的和已使用的内存数目，还
 返回信息： total：内存总数； used：已经使用的内存数； free：空闲的内存数； shared：当前已经废弃不用； buffers Buffer：缓存内存数； available 还可以被 应用程序 使用的物理内存大小；
 
 #### 8）sar
+
 sar 命令是 Linux 下系统运行状态统计工具，它将指定的操作系统状态计数器显示到标准输出设备。sar 工具将对系统当前的状态进行取样，然后通过计算数据和比例来表达系统的当前运行状态。它的特点是可以连续对系统取样，获得大量的取样数据。取样数据和分析的结果都可以存入文件，使用它时消耗的系统资源很小。
 
 常用选项： -A：显示所有的报告信息； -b：显示 I/O 速率； -B：显示换页状态； -c：显示进程创建活动； -d：显示每个块设备的状态； -e：设置显示报告的结束时间； -f：从指定文件提取报告； -i：设状态信息刷新的间隔时间； -P：报告每个 CPU 的状态； -R：显示内存状态； -u：显示 CPU 利用率； -v：显示索引节点，文件和其他内核表的状态； -w：显示交换分区状态； -x：显示给定进程的状态；
@@ -95,6 +108,7 @@ sar 命令是 Linux 下系统运行状态统计工具，它将指定的操作系
 返回信息： active/s：发起的网络连接数量； passive/s：接收的网络连接数量； retrans/s：重传的数量；
 
 #### 9）top
+
 top 命令可以实时动态地查看系统的整体运行情况，是一个综合了多方信息监测系统性能和运行信息的实用工具。通过 top 命令所提供的互动式界面，用热键可以管理。
 
 常用选项： -b：以批处理模式操作； -c：显示完整的治命令； -d：屏幕刷新间隔时间； -I：忽略失效过程； -s：保密模式； -S：累积模式； -i <时间>：设置间隔时间； -u < 用户名 >：指定用户名； -p < 进程号 >：指定进程； -n < 次数 >：循环显示的次数；
@@ -127,7 +141,8 @@ top 交互命令： h：显示帮助画面，给出一些简短的命令总结�
 + 5144512k free[空闲交换区总量],
 + 2013180k cached[缓冲的交换区总量],
 
-## **<font style="color:rgb(38, 38, 38);">在基于 Linux 的系统上查看 CPU 温度和频率的小脚本</font>**
+## **`<font style="color:rgb(38, 38, 38);">`在基于 Linux 的系统上查看 CPU 温度和频率的小脚本`</font>`**
+
 ```json
 #!/usr/bin/env bash
 
@@ -136,28 +151,27 @@ cpu_temp=$(($(cat /sys/class/thermal/thermal_zone0/temp) / 1000))
 echo "cpu temperature : ${cpu_temp}"
 ```
 
+1. **`<font style="color:rgb(44, 44, 54);">`查看CPU信息`</font>`**`<font style="color:rgb(44, 44, 54);">`:`</font>`
+   - `<font style="color:rgb(44, 44, 54);">`使用`</font><font style="color:rgb(44, 44, 54);">`lscpu`</font><font style="color:rgb(44, 44, 54);">`命令可以获取CPU的详细信息，如架构、字长、核心数等。`</font>`
+   - `<font style="color:rgb(44, 44, 54);">`cat /proc/cpuinfo`</font><font style="color:rgb(44, 44, 54);">`提供更详细的CPU信息，包括每个核心的具体情况。`</font>`
+2. **`<font style="color:rgb(44, 44, 54);">`查看内存使用情况`</font>`**`<font style="color:rgb(44, 44, 54);">`:`</font>`
+   - `<font style="color:rgb(44, 44, 54);">`free -h`</font><font style="color:rgb(44, 44, 54);">`以易读的格式显示内存使用情况，包括物理内存和交换空间。`</font>`
+   - `<font style="color:rgb(44, 44, 54);">`top`</font><font style="color:rgb(44, 44, 54);">`或`</font><font style="color:rgb(44, 44, 54);">`htop`</font><font style="color:rgb(44, 44, 54);">`(如果已安装)可以实时查看各进程的资源占用，包括CPU和内存。`</font>`
+3. **`<font style="color:rgb(44, 44, 54);">`查看磁盘使用情况`</font>`**`<font style="color:rgb(44, 44, 54);">`:`</font>`
+   - `<font style="color:rgb(44, 44, 54);">`df -h`</font><font style="color:rgb(44, 44, 54);">`查看各文件系统的磁盘空间使用情况。`</font>`
+   - `<font style="color:rgb(44, 44, 54);">`du -sh *`</font><font style="color:rgb(44, 44, 54);">`查看当前目录下各文件及子目录的磁盘使用量。`</font>`
+4. **`<font style="color:rgb(44, 44, 54);">`查看系统整体负载和运行时间`</font>`**`<font style="color:rgb(44, 44, 54);">`:`</font>`
+   - `<font style="color:rgb(44, 44, 54);">`uptime`</font><font style="color:rgb(44, 44, 54);">`显示系统运行时间、当前用户数以及平均负载。`</font>`
+5. **`<font style="color:rgb(44, 44, 54);">`检查网络状态`</font>`**`<font style="color:rgb(44, 44, 54);">`:`</font>`
+   - `<font style="color:rgb(44, 44, 54);">`ifconfig`</font><font style="color:rgb(44, 44, 54);">`或`</font><font style="color:rgb(44, 44, 54);">`ip addr show`</font><font style="color:rgb(44, 44, 54);">`查看网络接口配置和IP地址。`</font>`
+   - `<font style="color:rgb(44, 44, 54);">`netstat -tuln`</font><font style="color:rgb(44, 44, 54);">`查看打开的端口和监听状态。`</font>`
+6. **`<font style="color:rgb(44, 44, 54);">`查看系统内核版本和其他系统信息`</font>`**`<font style="color:rgb(44, 44, 54);">`:`</font>`
+   - `<font style="color:rgb(44, 44, 54);">`uname -a`</font><font style="color:rgb(44, 44, 54);">`显示内核版本、主机名等系统信息。`</font>`
+7. **`<font style="color:rgb(44, 44, 54);">`硬件信息`</font>`**`<font style="color:rgb(44, 44, 54);">`:`</font>`
+   - `<font style="color:rgb(44, 44, 54);">`对于更详细的硬件配置，可以使用lshw(需要安装)或dmidecode(需要root权限)命令。`</font>`
 
+## `<font style="color:rgb(44, 44, 54);">`硬盘`</font>`
 
-1. **<font style="color:rgb(44, 44, 54);">查看CPU信息</font>**<font style="color:rgb(44, 44, 54);">:</font>
-    - <font style="color:rgb(44, 44, 54);">使用</font><font style="color:rgb(44, 44, 54);">lscpu</font><font style="color:rgb(44, 44, 54);">命令可以获取CPU的详细信息，如架构、字长、核心数等。</font>
-    - <font style="color:rgb(44, 44, 54);">cat /proc/cpuinfo</font><font style="color:rgb(44, 44, 54);">提供更详细的CPU信息，包括每个核心的具体情况。</font>
-2. **<font style="color:rgb(44, 44, 54);">查看内存使用情况</font>**<font style="color:rgb(44, 44, 54);">:</font>
-    - <font style="color:rgb(44, 44, 54);">free -h</font><font style="color:rgb(44, 44, 54);">以易读的格式显示内存使用情况，包括物理内存和交换空间。</font>
-    - <font style="color:rgb(44, 44, 54);">top</font><font style="color:rgb(44, 44, 54);">或</font><font style="color:rgb(44, 44, 54);">htop</font><font style="color:rgb(44, 44, 54);">(如果已安装)可以实时查看各进程的资源占用，包括CPU和内存。</font>
-3. **<font style="color:rgb(44, 44, 54);">查看磁盘使用情况</font>**<font style="color:rgb(44, 44, 54);">:</font>
-    - <font style="color:rgb(44, 44, 54);">df -h</font><font style="color:rgb(44, 44, 54);">查看各文件系统的磁盘空间使用情况。</font>
-    - <font style="color:rgb(44, 44, 54);">du -sh *</font><font style="color:rgb(44, 44, 54);">查看当前目录下各文件及子目录的磁盘使用量。</font>
-4. **<font style="color:rgb(44, 44, 54);">查看系统整体负载和运行时间</font>**<font style="color:rgb(44, 44, 54);">:</font>
-    - <font style="color:rgb(44, 44, 54);">uptime</font><font style="color:rgb(44, 44, 54);">显示系统运行时间、当前用户数以及平均负载。</font>
-5. **<font style="color:rgb(44, 44, 54);">检查网络状态</font>**<font style="color:rgb(44, 44, 54);">:</font>
-    - <font style="color:rgb(44, 44, 54);">ifconfig</font><font style="color:rgb(44, 44, 54);">或</font><font style="color:rgb(44, 44, 54);">ip addr show</font><font style="color:rgb(44, 44, 54);">查看网络接口配置和IP地址。</font>
-    - <font style="color:rgb(44, 44, 54);">netstat -tuln</font><font style="color:rgb(44, 44, 54);">查看打开的端口和监听状态。</font>
-6. **<font style="color:rgb(44, 44, 54);">查看系统内核版本和其他系统信息</font>**<font style="color:rgb(44, 44, 54);">:</font>
-    - <font style="color:rgb(44, 44, 54);">uname -a</font><font style="color:rgb(44, 44, 54);">显示内核版本、主机名等系统信息。</font>
-7. **<font style="color:rgb(44, 44, 54);">硬件信息</font>**<font style="color:rgb(44, 44, 54);">:</font>
-    - <font style="color:rgb(44, 44, 54);">对于更详细的硬件配置，可以使用lshw(需要安装)或dmidecode(需要root权限)命令。</font>
-
-## <font style="color:rgb(44, 44, 54);">硬盘</font>
 1. `**lsblk**`：列出所有可用的块设备（包括硬盘）。
 
 ```plain
@@ -255,11 +269,12 @@ dmesg | grep -i disk
 ```
 
 ## CPU
+
 CPU监控脚本
 
-使用mpstat  + tee   把 mpstat  -P   ALL   3   的输出    使用可变参数num    和   parameter  来控制输出  
+使用mpstat  + tee   把 mpstat  -P   ALL   3   的输出    使用可变参数num    和   parameter  来控制输出
 
-mpstat   -p ALL   3  的输出是这个样子的 
+mpstat   -p ALL   3  的输出是这个样子的
 
 ```python
 09:22:28 PM  CPU    %usr   %nice    %sys %iowait    %irq   %soft  %steal  %guest  %gnice   %idle
@@ -285,13 +300,10 @@ mpstat   -p ALL   3  的输出是这个样子的
 
 num 起到的作用是  筛选 cpu的num     是字符串参数
 
- parameter   起到的作用是筛选    %usr   %nice    %sys %iowait    %irq   %soft  %steal  %guest  %gnice 这样的参数   可以多选  
-
-
+ parameter   起到的作用是筛选    %usr   %nice    %sys %iowait    %irq   %soft  %steal  %guest  %gnice 这样的参数   可以多选
 
 ![](https://cdn.nlark.com/yuque/0/2024/png/39116304/1730685778200-83f54f3c-9c7c-4db4-8bd4-edf4833be7bb.png)
 
 ```python
 mpstat  -P   ALL   3  | grep  3 
 ```
-

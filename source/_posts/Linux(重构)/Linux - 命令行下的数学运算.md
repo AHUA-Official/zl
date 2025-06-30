@@ -1,3 +1,9 @@
+---
+title: Linux - 命令行下的数学运算
+date: 2024-12-15 00:00:00
+tags: [Linux笔记]
+---
+
 > 有几个有趣的命令可以在 Linux 系统下做数学运算： `expr`、`factor`、`jot` 和 `bc` 命令。
 >
 
@@ -57,7 +63,7 @@ $ expr 11 = 12
 0
 ```
 
-请读作“11 是否等于 11？”及“11 是否等于 12？”，你很快就会习惯这种写法。当然，我们不会在命令行上执行上述比较，可能的比较是 `$age` 是否等于 `11`。
+请读作"11 是否等于 11？"及"11 是否等于 12？"，你很快就会习惯这种写法。当然，我们不会在命令行上执行上述比较，可能的比较是 `$age` 是否等于 `11`。
 
 ```plain
 $ age=11
@@ -322,8 +328,8 @@ You may also find more information about bc by running info bc or man bc, or by 
 Announcements about bc and most other GNU software are made on <[info-gnu@gnu.org](mailto:info-gnu@gnu.org)>.  
 有关bc和大多数其他GNU软件的公告在<[info-gnu@gnu.org](mailto:info-gnu@gnu.org)>上发布。
 
-To subscribe to any GNU mailing lists, please send an empty mail with a _Subject:_ header of just “subscribe” to the relevant _-request_ list. For example, to subscribe yourself to the GNU announcement list, you would send mail to <[info-gnu-request@gnu.org](mailto:info-gnu-request@gnu.org?Subject=subscribe)>. Or you can use the [web interface](https://lists.gnu.org/mailman/listinfo/info-gnu).  
-要订阅任何GNU邮件列表，请发送一封空邮件，其中包含_主题：标题_为“订阅”的相关邮件 _- 请求_列表。例如，要订阅GNU公告列表，您可以发送邮件到<[info-gnu-request@gnu.org](mailto:info-gnu-request@gnu.org?Subject=subscribe)>。或者你可以使用[Web界面](https://lists.gnu.org/mailman/listinfo/info-gnu)。
+To subscribe to any GNU mailing lists, please send an empty mail with a _Subject:_ header of just "subscribe" to the relevant _-request_ list. For example, to subscribe yourself to the GNU announcement list, you would send mail to <[info-gnu-request@gnu.org](mailto:info-gnu-request@gnu.org?Subject=subscribe)>. Or you can use the [web interface](https://lists.gnu.org/mailman/listinfo/info-gnu).  
+要订阅任何GNU邮件列表，请发送一封空邮件，其中包含_主题：标题_为"订阅"的相关邮件 _- 请求_列表。例如，要订阅GNU公告列表，您可以发送邮件到<[info-gnu-request@gnu.org](mailto:info-gnu-request@gnu.org?Subject=subscribe)>。或者你可以使用[Web界面](https://lists.gnu.org/mailman/listinfo/info-gnu)。
 
 ### Maintainer  维护者
 bc is currently maintained by Phil Nelson.  
