@@ -2,6 +2,7 @@
 title: Git使用指南
 date: 2023-11-15
 tags: [Git, 版本控制]
+categories: [微信公众号]
 ---
 ## 1. 简介
 

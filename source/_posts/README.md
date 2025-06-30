@@ -1,3 +1,10 @@
+---
+title: 关于我
+date: 2025-04-16 10:00:00
+tags: [readme]
+---
+
+
 ·	  Hi there 👋 <img src="https://github.com/laixintao/laixintao/blob/master/assets/wave.gif" width="29px">
 <!--
 **AHUA-Official/AHUA-Official** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.

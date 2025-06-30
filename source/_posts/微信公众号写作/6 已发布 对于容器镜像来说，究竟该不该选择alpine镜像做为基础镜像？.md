@@ -1,3 +1,12 @@
+---
+title: 对于容器镜像来说，究竟应不应该使用alpine作为基础镜像
+date: 2025-04-16 10:00:00
+tags: [容器]
+categories: [微信公众号]
+
+---
+
+
 #### alpine 的一些问题
 ###### 导致绝大部分问题来源的 C 标准库兼容性问题
 alpine 的 C 标准库的实现是musl，而不是其他大多数 Linux 发行版（如Ubuntu，CentOS）使用的 glibc  

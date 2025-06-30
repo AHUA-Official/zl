@@ -3,17 +3,17 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: hwt&zl
-subtitle: ''
+title: zl
+subtitle: '写代码是热爱，写到世界充满爱！'
 description: '写代码是热爱，写到世界充满爱！'
 keywords:
-author: hwt &zl
-language: en
+author: zl
+language: zh-CN
 timezone: ''
 
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
-url: http://example.com
+url: https://github.com/AHUA-Official
 permalink: :title/
 permalink_defaults:
 pretty_urls:

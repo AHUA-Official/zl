@@ -1,3 +1,13 @@
+---
+title: 特别特别全的Linux文本处理命令解析
+date: 2025-04-16 10:00:00
+tags: [shell]
+categories: [微信公众号]
+
+---
+
+
+
 # LinuxZL-文本处理工具（发布名， 特别特别全的Linux文本处理命令解析）
 > **摘要**: mkdir、touch、find、cat、tail、head、sed、awk、grep、more、less、vim等命令  提供了不同场景下进行文本处理/日志分析的命令行工具喵
 >

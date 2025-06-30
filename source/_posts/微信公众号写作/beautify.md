@@ -1,7 +1,8 @@
 ---
 title: 美化Github主页
-date: 
+date: 2024-12-15 00:00:00
 tags: [Github]
+categories: [微信公众号]
 ---
 # 美化github主页的教程
 简单介绍美化Github主页的小工具  

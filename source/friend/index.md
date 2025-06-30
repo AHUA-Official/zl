@@ -4,12 +4,12 @@ comments: true
 ---
 
 ## 本站信息
-- 站名： hwt&zl
-- 站长： hwt 
+- 站名： zl的博客
+- 站长： zl
 - 副站长 zl
-- 地址： http://www.hwtzl.cn/
-- 备用地址：http://www.cutehwt.cn/
-
+- 地址： www.furinadefantine.com
+- 备用地址：
+- 
 ## 申请方法
 - 添加本站后，在本页留言，格式如下
 
