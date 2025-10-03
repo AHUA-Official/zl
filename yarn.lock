@@ -1234,13 +1234,15 @@ hexo-tag-cloud@^2.1.2:
     hexo-fs "^0.2.2"
     hexo-log "^0.2.0"
 
-hexo-theme-butterfly@^5.3.3:
-  version "5.3.3"
-  resolved "https://registry.npmmirror.com/hexo-theme-butterfly/-/hexo-theme-butterfly-5.3.3.tgz"
-  integrity sha512-iEPvybG90wgQ1hnjCgDpsOfq7kdzBDok0W2fsREkGUtgapYEqZXcRh/DZHMLZuV3TamFnQ7EaufJ5SUNQHl9ug==
+hexo-theme-butterfly@^5.5.1:
+  version "5.5.1"
+  resolved "https://registry.yarnpkg.com/hexo-theme-butterfly/-/hexo-theme-butterfly-5.5.1.tgz#8bef7e15765ff8e19c5d99a4f52bd1163ee032ef"
+  integrity sha512-hyFito6cnRjUbgX12Grp/eQvBlbckn/Gq60zoyebZBsoAjnwyycCl+dtx0dJx5GUsrgWPAH2bL/dEkHmDhwvrQ==
   dependencies:
     hexo-renderer-pug "^3.0.0"
     hexo-renderer-stylus "^3.0.1"
+    hexo-util "^3.3.0"
+    moment-timezone "^0.6.0"
 
 hexo-theme-landscape@^1.0.0:
   version "1.1.0"
@@ -1837,6 +1839,13 @@ moment-timezone@^0.5.34:
   version "0.5.47"
   resolved "https://registry.npmmirror.com/moment-timezone/-/moment-timezone-0.5.47.tgz"
   integrity sha512-UbNt/JAWS0m/NJOebR0QMRHBk0hu03r5dx9GK8Cs0AS3I81yDcOc9k+DytPItgVvBP7J6Mf6U2n3BPAacAV9oA==
+  dependencies:
+    moment "^2.29.4"
+
+moment-timezone@^0.6.0:
+  version "0.6.0"
+  resolved "https://registry.yarnpkg.com/moment-timezone/-/moment-timezone-0.6.0.tgz#c5a6519171f31a64739ea75d33f5c136c08ff608"
+  integrity sha512-ldA5lRNm3iJCWZcBCab4pnNL3HSZYXVb/3TYr75/1WCTWYuTqYUb5f/S384pncYjJ88lbO8Z4uPDvmoluHJc8Q==
   dependencies:
     moment "^2.29.4"
 
